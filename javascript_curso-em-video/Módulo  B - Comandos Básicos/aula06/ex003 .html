@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 003</title>
+    <style>
+        body {
+            background-color: rgb(84, 84, 207);
+            color: bisque; /* comentário em css */
+            font: normal 18px "Courrier New";
+        }
+        h1 {
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1> <!-- comentário em html -->
+    <p>Já me livrei da maldição.</p>
+    <script>     
+        var n1 = parseFloat(window.prompt('Digite um número: ')); // dessa maneira está certa de fazer
+        var n2 = Number.parseFloat(window.prompt('Digite outro número: ')); // dessa maneira também está certa
+        
+        // var n2 = Number(window.prompt('Digite outro número: ')); dessa maneira também está certa
+        
+        var s = n1 + n2;
+        window.alert(`A soma entre ${n1} e ${n2} é igual à ${s}`);
+        // (number + number) = adição
+        // (string + string) = concatenação 
+    </script>
+</body>
+</html>

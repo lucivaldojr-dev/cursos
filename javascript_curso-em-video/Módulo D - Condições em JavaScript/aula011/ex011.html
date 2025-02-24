@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa de Reconhecimento</title>
+</head>
+<body>
+    <h1>Sistema de Identificação</h1>
+    Qual seu país de origem? <input type="text" name="nac" id="nac"> Então você é 
+    <input type="button" value="identificar" onclick="identificar ()">
+    <div id="res"></div>
+    <script>
+        
+        function identificar () {
+            var nac = document.querySelector('input#nac')
+            var res = document.querySelector('div#res')
+            var nac = (nac.value)
+            res.innerHTML = `<p>Se vocé é natural do <strong>${nac}.</strong></p>`
+            if (!nac.includes('Brasil')) {
+                res.innerHTML += `<p>Então você é <strong>Estrangeiro. </strong>Então seja muito bem vindo ao Brasil!`
+            }
+            res.innerHTML += `<p>Conheça as maravilhas do nosso país.</p>`
+        }
+    </script>
+    
+</body>
+</html>
